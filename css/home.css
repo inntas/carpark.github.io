@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #5584AC;
+}
+
+
+.navbar-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.sticky{
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0 10px 20px 0 rgb(0, 0, 0, 0.5);
+}
+
+.navbar {
+    position: relative;
+    padding: 20px 0;
+}
+
+.navbar-brand .logo {
+    max-height: 50px;
+
+}
+
+.nav-item .nav-link{
+    margin-right: 10px;
+    color: #E3D12E;
+    font-weight: 600;
+}
+
+.nav-item .nav-item-area{
+    color: #3B5998;
+    padding: 10px;
+    border: #3B5998 1px solid;
+    border-radius: 10px;
+}
+.nav-item .nav-item-area:hover{
+    color: white;
+    background-color: #3B5998;
+    
+}
+
+@keyframes bounceTop-1 {
+    0%,100%{
+        transform: translateY(-20px);
+    }
+    50%{
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes animationsatu {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/* home-section */
+
+.jumbotron {
+    height: 500px;
+    margin-top: 200px;
+    background-position: bottom center;
+}
+
+.shape{
+    z-index: -1;
+}
+
+.jumbotron .shape.shapesatu{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 130px;
+    top: 20%;
+    border-radius: 50%;
+    background: #3B5998;
+    animation: animationsatu 2s linear infinite;
+}
+
+.jumbotron .shape.shapetiga{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 26px;
+    bottom: 25%;
+    border-radius: 50%;
+    background: #E3D12E;
+    animation: animationsatu 2s linear infinite;
+}
+
+.jumbotron .shape.shapeempat{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 40%;
+    top: 175px;
+    border-radius: 50%;
+    background: #8EC6C1;
+    animation: animationsatu 2s linear infinite;
+    z-index: 1;
+}
+
+.jumbotron .shape.shapedua{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 150px;
+    bottom: 40px;
+    border-radius: 50%;
+    background: #5584AC;
+    animation: animationsatu 2s linear infinite;
+}
+
+.jumbotron .shape.shapelima{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    bottom: 20%;
+    border-radius: 50%;
+    background: #E3D12E;
+    animation: animationsatu 2s linear infinite;
+}
+
+.jumbotron .shape.shapeenam{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 45%;
+    bottom: 70%;
+    border-radius: 50%;
+    background: #3B5998;
+    animation: animationsatu 2s linear infinite;
+}
+
+.jumbotron-content {
+    position: relative;
+    /* margin-top: 120px;
+    z-index: 10; */
+}
+
+.jumbotron-content .jumbotron-title{
+    font-size: 42px;
+    color: #5584AC;
+}
+
+.jumbotron-content .jumbotron-title span{
+    color: #E3D12E;
+}
+
+.jumbotron-content .text{
+    margin-top: 20px;
+    
+}
+
+.jumbotron-content .text span{
+    color: #3B5998;
+    font-weight: 600;
+}
+
+.jumbotron-image {
+    position: relative;
+
+    animation: bounceTop-1 2s ease-in-out infinite;
+}
+
+.jumbotron-image img{
+    max-width: 100%;
+    height: 100%;
+}
+
+.container .jumbotron-shape-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    background-image: url('../image/shape1.svg');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.jumbotron-shape-2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+/* section download */
+.download-section{
+    overflow: hidden;
+}
+
+@keyframes animationdua{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+/* why */
+
+.why-section {
+    background-image: url('../image/park1.jpeg');
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+.why-section .row{
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+
+.why-section .card{
+    border-radius: 30px;
+
+}
+
+.why-title h1{
+    color: #E3D12E
+}
+
+.why-title h1 span{
+    color: #3B5998;
+}
+
+/* end why */
+
+.download-section .download-image .download-shape-1{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: #3B5998;
+    border-radius: 50%;
+    animation: animationdua 2s linear infinite;
+    z-index: -1;
+}
+
+.download-section .download-image img{
+    position: relative;
+    max-width: 350px;
+    padding-top: 65px;
+    padding-left: 60px;
+    padding-bottom: 100px;
+}
+
+/* #btn-download{
+    padding: 10px;
+    border: 1px solid #3B5998;
+    background-color:white;
+    color: #3B5998;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: 0.5s;
+    margin-bottom: 15px;
+}
+
+#btn-download:hover{
+    background-color: #E3D12E;
+    color: #3B5998;
+} */
+
+
+.content-download {
+    position: relative;
+    margin-top: 130px;
+    padding-bottom: 100px;
+}
+
+.jumbotron-image-2 {
+    /* position: relative; */
+
+    margin-top: 50px;
+    animation: bounceTop-1 2s ease-in-out infinite;
+}
+
+.jumbotron-content-2 {
+    /* position: relative; */
+    /* margin-top: 75px; */
+    z-index: 10;
+}
+
+.image{
+    width: 250px;
+}
+
+.download-content h1{
+    color: #3B5998;
+}
+
+.download-content h1 span{
+    color: #E3D12E;
+}
+
+
+
+
+
+/* footer */
+
+footer{
+    background-color: #3B5998;
+    height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .why-section{
+        margin-top: 100px;
+    }
+    .jumbotron-shape-1{
+        display: none;
+    }
+    .jumbotron .shape.shapesatu{
+        display: none;
+    }
+
+    .jumbotron .shape.shapedua{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        left: 26px;
+        bottom: 10%;
+        border-radius: 50%;
+        background: #5584AC;
+        animation: animationsatu 2s linear infinite;
+    }
+
+    .jumbotron .shape.shapetiga{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 70px;
+        bottom: 15%;
+        border-radius: 50%;
+        background: #E3D12E;
+        animation: animationsatu 2s linear infinite;
+    }
+    
+    .jumbotron .shape.shapeempat{
+        display: none;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        left: 0%;
+        top: 220px;
+        border-radius: 50%;
+        background: #3B5998;
+        animation: animationsatu 2s linear infinite;
+        z-index: -1;
+    }
+    
+    
+    .jumbotron .shape.shapelima{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 350px;
+        bottom: 0;
+        border-radius: 50%;
+        background: #E3D12E;
+        animation: animationsatu 2s linear infinite;
+    }
+    
+    .jumbotron .shape.shapeenam{
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        left: 80%;
+        bottom: 20%;
+        border-radius: 50%;
+        background: #3B5998;
+        animation: animationsatu 2s linear infinite;
+    }
+}
+

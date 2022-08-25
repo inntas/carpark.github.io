@@ -252,8 +252,13 @@ h1{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    
+    background-repeat: no-repeat;
 }
+
+.why-section .container{
+    padding: 300px;
+}
+
 .why-section .row{
     margin-top: 120px;
     margin-bottom: 120px;
@@ -354,12 +359,17 @@ footer{
 }
 
 @media screen and (max-width: 768px) {
+
     .why-section{
         margin-top: 100px;
     }
     .jumbotron-shape-1{
         display: none;
     }
+    .jumbotron-shape-2{
+        width: 50%;
+    }
+
     .jumbotron .shape.shapesatu{
         display: none;
     }
